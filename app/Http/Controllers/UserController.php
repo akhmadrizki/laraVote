@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\DB;
 use Session;
 class UserController extends Controller
 {
-    //
     public function index()
     {
         return view('user.index');
@@ -22,15 +21,17 @@ class UserController extends Controller
         $token = $data->input('usertoken');
 
         $cek = DB::table('pemilih')->where(['username' => $token])->first();
-        $status = DB::table('pemilih')->where(['username' => $token,
-                                                'status' => 2 ])->first();
+        $status = DB::table('pemilih')->where([
+            'username' => $token,
+            'status'   => 2 
+            ])->first();
         
         if (!$cek) {
-            Session::flash('Gagal','Token Tidak Ditemukan');
+            Session::flash('Gagal','NIM Tidak Ditemukan');
             return redirect('/votinglogin');
         } else {
             if(!$status){
-                Session::flash('Gagal','Token Yang Di Input Telah Digunakan');
+                Session::flash('Gagal','Anda Sudah Melakukan Vote');
                 return redirect('/votinglogin');
             }else{
                $data->session()->put('token',$token);
@@ -51,13 +52,13 @@ class UserController extends Controller
         if (!$cek) {
             return response()->json([
                 'success' => '0',
-                'message' => 'Token Tidak Ditemukan'
+                'message' => 'NIM Tidak Ditemukan'
             ]);
         } else {
             if(!$status){
                 return response()->json([
                     'success' => '0',
-                    'message' => 'Token Telah Digunakan'
+                    'message' => 'Anda Sudah Melakukan Vote'
                 ]);
             }else{
                 return response()->json([

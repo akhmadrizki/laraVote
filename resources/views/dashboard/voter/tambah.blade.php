@@ -4,8 +4,7 @@
 <?php $judul = 'Voters'; ?>
 	<div class="panel panel-headline">
 		<div class="panel-heading">
-			<div class="panel-title">Tambah Akun Voting Pilketos</div>
-			<div class="panel-subtitle">Periode : 2019-2020</div>
+			<div class="panel-title">Tambah Akun Voting Pemilih Ketua BEM</div>
 		</div>
 		<div class="panel-body">
 			<div class="row">
@@ -18,7 +17,7 @@
           <form method="post" action="{{ route('admin.voters.store') }}">
             {{ csrf_field() }}
           <div class="input-group">
-            <input class="form-control" type="text" name="jumlah" placeholder="Masukan jumlah voters">
+            <input class="form-control" type="text" name="jumlah" placeholder="Masukkan NIM Mahasiswa">
             <span class="input-group-btn"><button class="btn btn-primary" type="submit">Tambahkan</button></span>
             </form>
           </div>

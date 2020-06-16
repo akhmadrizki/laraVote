@@ -1,18 +1,11 @@
-<html lang="en" class="fullscreen-bg"><head>
-<title>Login Admin</title>
+<html lang="en">
+<head>
+<title>Login Admina</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <!-- LARAVEL CSS -->
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/mycss.css') }}">
-<!--   <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css')}}"> -->
-  <!-- VENDOR CSS -->
-  <link rel="stylesheet" href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css')}}">
-  <link rel="stylesheet" href="{{ asset('/vendor/font-awesome/css/font-awesome.min.css')}}">
-  <link rel="stylesheet" href="{{ asset('/vendor/linearicons/style.css')}}">
-  <link rel="stylesheet" href="{{ asset('/vendor/chartist/css/chartist-custom.css')}}">
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="{{ asset('/css/main.css')}}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 </head>
@@ -26,7 +19,6 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="{{asset('assets/img/logo-dark.png')}}" alt="Logo Pilketos"></div>
 								<p class="lead">Masuk ke halaman  admin</p>
 							</div>
 							<form class="form-auth-small" action="{{ route('login') }}" method="post">

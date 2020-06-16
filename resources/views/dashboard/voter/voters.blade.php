@@ -5,14 +5,12 @@
 	<div class="panel panel-headline">
 		<div class="panel-heading">
 			<div class="panel-title">E-Voting | Voters</div>
-			<div class="panel-subtitle">Periode : 2019-2020</div>
 		</div>
 		<div class="panel-body">
 			<div class="row">
 				<div class="col-md-8">
 					<a href="{{ route('admin.voters.tambah') }}" class="btn btn-primary mb-5"><i class="fa fa-fw fa-user-plus"></i><span> Tambah Akun Voting</span></a>
 					<a href="{{ route('admin.voters.hapus') }}" class="btn btn-danger mb-5"><i class="fa fa-fw fa-trash"></i><span> Hapus Akun Voting</span></a>
-					<a href="{{ route('admin.voters.export_excel') }}" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
 				</div>
 			</div>
 			<div class="row" style="margin-top:10px;">
@@ -22,7 +20,7 @@
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th>Token</th>
+                      <th>Code</th>
                       <th>Status</th>
                     </tr>
                   </thead>

@@ -14,7 +14,7 @@ class CreatePeriodeTable extends Migration
     public function up()
     {
         Schema::create('periode', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('tahun');
             $table->timestamps();
         });

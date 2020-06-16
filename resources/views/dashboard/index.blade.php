@@ -5,7 +5,6 @@
           <div class="panel panel-headline">
             <div class="panel-heading">
               <h3 class="panel-title">E-Voting | Dashboard</h3>
-              <p class="panel-subtitle">Periode : 2019-2020</p>
             </div>
             <div class="panel-body">
               <div class="row">

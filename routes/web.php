@@ -13,9 +13,11 @@
 /** Default Route */
 Route::get('/','UserController@index');
 Route::get('/votinglogin','UserController@votinglogin')->name('votinglogin');
+
 /** Admin Route */
 Route::get('/admin','DashboardController@index')->name('home');	
 Route::post('/admin/postlogin','AuthController@postlogin');
+
 //Route Kandidat
 Route::get('/admin/kandidat','KandidatController@index')->name('admin.kandidat');
 Route::get('/admin/kandidat/tambah','KandidatController@tambah')->name('admin.kandidat.tambah');

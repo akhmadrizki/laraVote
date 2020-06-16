@@ -12,7 +12,7 @@
                   <div class="row">
                       <div class="col">
                       <h3>Terimakasih Atas Partisipasinya</h3>
-                      <h4>Suara Anda Menentukan Masa Depan Sekolah</h4>
+                      <h4>Suara Anda Menentukan Masa Depan Kampus 🙏</h4>
                       </div>
                   </div>
                   <div class="row">

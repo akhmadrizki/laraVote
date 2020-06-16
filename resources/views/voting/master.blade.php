@@ -18,7 +18,7 @@
 @yield('konten')
     <footer>
         <hr style="margin-bottom:5px;">
-        <h6 class="text-center" style="color:white">Copyright@RPL SMKN 1 Kawali</h6>
+        <h6 class="text-center" style="color:white">{{ date('Y') }} - Akhmad Rizki Prayoga</h6>
     </footer>
 <script src="/js/app.js"></script>
 @yield('js')

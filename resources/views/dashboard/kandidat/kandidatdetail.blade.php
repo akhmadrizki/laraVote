@@ -5,10 +5,7 @@
 <div class="panel panel-headline">
 	<div class="panel-heading">
 		<div class="panel-title">
-			DETAIL CALON KETUA OSIS
-		</div>
-		<div class="panel-subtitle">
-			Periode : 2019-2020
+			DETAIL CALON KETUA BEM
 		</div>
 	</div>
 	<div class="panel-body">
@@ -24,10 +21,6 @@
 								<!-- PROFILE HEADER -->
 								<div class="profile-header">
 									<img src="{{ asset('foto_kandidat/'.$detailkandidat->foto )}}"  width="100%" height="490"  alt="Foto">
-									<!-- <div class="profile-main">
-										<h3 class="name">Samuel Gold</h3>
-										<span class="online-status status-available">Available</span>
-									</div> -->
 								</div>
 							</div>
 							<!-- END LEFT COLUMN -->

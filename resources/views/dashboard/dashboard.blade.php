@@ -31,7 +31,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="brand">
-        <a href="" style="font-size:30px;font-weight:bold;"><!-- <img src="{{ asset('/img/logo-dark.png')}}" alt="Klorofil Logo" class="img-responsive logo"> -->
+        <a href="/" style="font-size:30px;font-weight:bold;">
           E-Voting
         </a>
       </div>
@@ -96,8 +96,7 @@
     <div class="clearfix"></div>
     <footer>
       <div class="container-fluid">
-        <p class="copyright">&copy; 2019 RPL SMKN 1 Kawali.</p>
-        <p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
+        <p class="copyright">&copy; {{date('Y')}} - Akhmad Rizki Prayoga</p>
       </div>
     </footer>
   </div>

@@ -5,10 +5,7 @@
 	<div class="panel panel-headline">
 		<div class="panel-heading">
 			<div class="panel-title">
-				EDIT CALON KETUA OSIS
-			</div>
-			<div class="panel-subtitle">
-				Periode : 2019-2020
+				EDIT CALON KETUA BEM
 			</div>
 		</div>
 		<div class="panel-body">
@@ -21,7 +18,7 @@
 				<div class="col-md-5">
 					<form method="post" action="{{ route('admin.kandidat.update',$edit->id) }}" enctype="multipart/form-data">
 						{{ csrf_field() }}
-						<label for="gambar">Foto Calon Ketua Osis :</label>
+						<label for="gambar">Foto Calon Ketua BEM :</label>
 						<input type="file" id="gambar" name="gambar" class="form-control">
 						<label for="nama">Nama :</label>
 						<input type="text" id="nama" name="nama" class="form-control" value="{{ $edit->nama }}">

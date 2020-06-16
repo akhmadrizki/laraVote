@@ -15,9 +15,9 @@ class CreatePemilihTable extends Migration
     {
         Schema::create('pemilih', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('username', 5)->unique();
-            $table->foreign('periode')->references('id')->on('periode')->onDelete('cascade');
-            $table->foreign('pilihan')->references('id')->on('kandidat')->onDelete('cascade');
+            $table->string('username')->unique();
+            $table->unsignedInteger('periode');
+            $table->unsignedInteger('pilihan')->nullable();
             $table->string('status');
             $table->timestamps();
         });

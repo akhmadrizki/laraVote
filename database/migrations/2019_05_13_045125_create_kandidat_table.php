@@ -19,7 +19,8 @@ class CreateKandidatTable extends Migration
             $table->text('visi');
             $table->text('misi');
             $table->string('gambar');
-            $table->foreign('periode')->references('id')->on('periode')->onDelete('cascade');
+            $table->unsignedInteger('periode');
+            $table->integer('jumlahsuara');
             $table->timestamps();
         });
     }

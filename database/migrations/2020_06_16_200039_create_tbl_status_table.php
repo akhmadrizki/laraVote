@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminTable extends Migration
+class CreateTblStatusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateAdminTable extends Migration
      */
     public function up()
     {
-        Schema::create('admin', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nama',100);
-            $table->string('username');
-            $table->string('password');
+        Schema::create('tbl_status', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('nama');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateAdminTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin');
+        Schema::dropIfExists('tbl_status');
     }
 }

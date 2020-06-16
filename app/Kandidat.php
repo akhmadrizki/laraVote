@@ -8,5 +8,5 @@ class Kandidat extends Model
 {
     //
     protected $table    = 'kandidat';
-    protected $fillable = ['nama','visi','misi','periode','foto'];
+    protected $fillable = ['nama','visi','misi','periode','foto','jumlahsuara'];
 }
