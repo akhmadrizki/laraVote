@@ -28,38 +28,20 @@ class VotersController extends Controller
     }
     public function tambah()
     {
-    	    	return view('dashboard/voter/tambah');
+    	return view('dashboard/voter/tambah');
     }
 	/** TAMPILKAN MENU HAPUS */
 	public function hapus()
 	{
 		return view('dashboard/voter/hapus');
 	}
-    public function store(Request $data)
+    public function store(Request $request)
     {
-    	$jumlah = $data->jumlah;
-    	for ($i=0; $i < $jumlah ; $i++) { 
-    		# code...
-    		$karakter = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-    		// $string   = '';
-
-    		for ($x=0; $x < 6 ; $x++) { 
-    			
-				$random = Str::lower(Str::random(4));
-				$string = $random;
-
-    		}$token = strtoupper($string);
-    			/** CEK TOKEN SUDAH TERDAFTAR ATAU BELUM*/
-    			$cek = Voters::find($token);
-
-    			if(empty($cek)){
-		    		Voters::create([
-		    			'username' => $token,
-		    			'periode'  => 1,
-		    			'status'   => 2 ]);
-		    }
-		
-    	}
+		Voters::create([
+			'username' => $request->username,
+			'periode'  => 1,
+			'status'   => 2 
+		]);
 
     	 return redirect('/admin/voters');
 	}

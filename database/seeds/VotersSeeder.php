@@ -16,8 +16,7 @@ class VotersSeeder extends Seeder
         $voter = [
             'username' => 1801020011,
             'periode' => 1,
-            'status' => 1,
-            'pilihan' => 1,
+            'status' => 2
         ];
         Voters::create($voter);
     }

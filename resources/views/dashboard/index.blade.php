@@ -1,7 +1,9 @@
 @extends('dashboard.dashboard')
 @section('judul_halaman','Dashboard')
 @section('konten')
-<?php $judul='Dashboard'; ?>
+@php
+	$judul = 'Voters'	
+@endphp
           <div class="panel panel-headline">
             <div class="panel-heading">
               <h3 class="panel-title">E-Voting | Dashboard</h3>
@@ -96,7 +98,6 @@ Highcharts.chart('chartHasil', {
             borderWidth: 0,
             dataLabels: {
                 enabled: true,
-                // format: '{point.y:.1f}%'
             }
         }
     },

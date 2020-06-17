@@ -1,11 +1,12 @@
 @extends('dashboard.dashboard')
 @section('judul_halaman','Voters')
 @section('konten')
-<?php $judul = 'Voters'; ?>
+@php
+	$judul = 'Voters'	
+@endphp
 	<div class="panel panel-headline">
 		<div class="panel-heading">
-			<div class="panel-title">Hapus Akun Voting Pilketos</div>
-			<div class="panel-subtitle">Periode : 2019-2020</div>
+			<div class="panel-title">Hapus Akun Voters</div>
 		</div>
 		<div class="panel-body">
 			<div class="row">

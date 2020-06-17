@@ -46,8 +46,10 @@ class UserController extends Controller
         $token = $data->usertoken;
 
         $cek = DB::table('pemilih')->where(['username' => $token])->first();
-        $status = DB::table('pemilih')->where(['username' => $token,
-                                                'status' => 2 ])->first();
+        $status = DB::table('pemilih')->where([
+            'username' => $token,
+            'status' => 2 
+            ])->first();
         
         if (!$cek) {
             return response()->json([

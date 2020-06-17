@@ -1,11 +1,13 @@
 @extends('dashboard.dashboard')
 @section('judul_halaman','Kandidat')
 @section('konten')
-<?php $judul = 'Kandidat'; ?>
+@php
+	$judul = 'Voters'	
+@endphp
 	<div class="panel panel-headline">
 		<div class="panel-heading">
 			<div class="panel-title">
-				TAMBAH CALON KETUA OSIS
+				TAMBAH CALON KETUA BEM
 			</div>
 			<div class="panel-subtitle">
 				Periode : 2019-2020
@@ -21,7 +23,7 @@
 				<div class="col-md-5">
 					<form method="post" action="{{ route('admin.kandidat.store') }}" enctype="multipart/form-data">
 						{{ csrf_field() }}
-						<label for="gambar">Foto Calon Ketua Osis :</label>
+						<label for="gambar">Foto Calon Ketua BEM :</label>
 						<input type="file" id="gambar" name="gambar" class="form-control">
 						<label for="nama">Nama :</label>
 						<input type="text" id="nama" name="nama" class="form-control">

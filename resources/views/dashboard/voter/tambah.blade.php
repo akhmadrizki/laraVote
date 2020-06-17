@@ -1,7 +1,9 @@
 @extends('dashboard.dashboard')
 @section('judul_halaman','Voters')
 @section('konten')
-<?php $judul = 'Voters'; ?>
+@php
+	$judul = 'Voters'	
+@endphp
 	<div class="panel panel-headline">
 		<div class="panel-heading">
 			<div class="panel-title">Tambah Akun Voting Pemilih Ketua BEM</div>
@@ -17,7 +19,7 @@
           <form method="post" action="{{ route('admin.voters.store') }}">
             {{ csrf_field() }}
           <div class="input-group">
-            <input class="form-control" type="text" name="jumlah" placeholder="Masukkan NIM Mahasiswa">
+            <input class="form-control" type="text" name="username" placeholder="Masukkan NIM Mahasiswa">
             <span class="input-group-btn"><button class="btn btn-primary" type="submit">Tambahkan</button></span>
             </form>
           </div>

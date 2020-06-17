@@ -44,19 +44,15 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{ asset('/img/user.png')}}" class="img-circle" alt="Avatar"> <span>Admin</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a class="" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        <i class="lnr lnr-exit"></i>{{ __('Logout') }}
-                                    </a></li>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+                <li><a class="" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                      <i class="lnr lnr-exit"></i>{{ __('Logout') }}
+                    </a>
+                </li>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
               </ul>
             </li>
-            <!-- <li>
-              <a class="update-pro" href="https://www.themeineed.com/downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>
-            </li> -->
           </ul>
         </div>
       </div>
@@ -72,10 +68,10 @@
             <li><a href="{{ route('home') }}" class="<?php if($judul == 'Dashboard') :?>active<?php endif;?>"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
             <li><a href="{{ route('admin.kandidat') }}" class="<?php if($judul == 'Kandidat') :?>active<?php endif;?>"><i class="lnr lnr-user"></i> <span>Kandidat</span></a></li>
             <li><a href="{{ route('admin.voters') }}" class="<?php if($judul == 'Voters') :?>active<?php endif;?>"><i class="lnr lnr-users"></i> <span>Voters</span></a></li>
-            <li><a  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i class="lnr lnr-exit"></i>{{ __('Logout') }}</a></li>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+            <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i class="lnr lnr-exit"></i>{{ __('Logout') }}</a></li>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
           </ul>
         </nav>
       </div>

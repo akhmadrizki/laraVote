@@ -17,7 +17,6 @@ class CreatePemilihTable extends Migration
             $table->increments('id');
             $table->string('username')->unique();
             $table->unsignedInteger('periode');
-            $table->unsignedInteger('pilihan')->nullable();
             $table->string('status');
             $table->timestamps();
         });

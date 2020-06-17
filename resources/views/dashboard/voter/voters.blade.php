@@ -1,7 +1,9 @@
 @extends('dashboard.dashboard')
 @section('judul_halaman','Voters')
 @section('konten')
-<?php $judul = 'Voters'; ?>
+@php
+	$judul = 'Voters'	
+@endphp
 	<div class="panel panel-headline">
 		<div class="panel-heading">
 			<div class="panel-title">E-Voting | Voters</div>

@@ -18,7 +18,7 @@ class CreateKandidatTable extends Migration
             $table->string('nama',100);
             $table->text('visi');
             $table->text('misi');
-            $table->string('gambar');
+            $table->string('foto');
             $table->unsignedInteger('periode');
             $table->integer('jumlahsuara');
             $table->timestamps();

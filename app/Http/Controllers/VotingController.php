@@ -8,7 +8,6 @@ use App\Voting;
 use Illuminate\Support\Facades\DB;
 class VotingController extends Controller
 {
-    //
     public function index(Request $data)
     {
         if($data->session()->get('token')){

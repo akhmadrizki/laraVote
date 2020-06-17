@@ -1,7 +1,9 @@
 @extends('dashboard.dashboard')
 @section('judul_halaman','Kandidat')
 @section('konten')
-<?php $judul = 'Kandidat'; ?>
+@php
+	$judul = 'Voters'	
+@endphp
 <div class="panel panel-headline">
 	<div class="panel-heading">
 		<div class="panel-title">

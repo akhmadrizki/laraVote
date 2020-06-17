@@ -14,7 +14,7 @@ class PeriodesSeeder extends Seeder
     public function run()
     {
         $periode = [
-            'tahun' => '2019-2020',
+            'periode' => '2019-2020',
         ];
         Periode::create($periode);
     }
