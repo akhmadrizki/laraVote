@@ -2,7 +2,7 @@
 @section('judul_halaman','Kandidat')
 @section('konten')
 @php
-	$judul = 'Voters'	
+	$judul = 'Kandidat'	
 @endphp
 <div class="panel panel-headline">
 	<div class="panel-heading">
